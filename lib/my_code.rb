@@ -36,7 +36,9 @@ end
 def reduce_to_total(source_array, starting_point)
   total = 0
   if starting_point == nil
-    (source_array.length - 1).times dp
+    (source_array.length - 1).times do |index|
+      
+    end
   else
     
   end
