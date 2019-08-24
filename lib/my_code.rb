@@ -37,16 +37,12 @@ def reduce_to_total(source_array, starting_point)
   total = 0
   if starting_point == nil
     index = 0
-    while index < source_array.length
-      total = total + source_array[index]
-      index += 1
-    end
   else
     index = starting_point
-    while index < source_array.length
-      total = total + source_array[index]
-      index += 1
-    end
+  end
+  while index < source_array.length
+    total = total + source_array[index]
+    index += 1
   end
   total
 end
