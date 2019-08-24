@@ -34,26 +34,27 @@ def map_to_square(source_array)
 end
 
 def reduce_to_total(source_array, starting_point)
-  puts "Starting point is #{starting_point}"
-  puts "Array is #{source_array}"
   if starting_point == nil
-    puts "Inside if"
     total = 0
   else
-    puts "Inside else"
     total = starting_point
   end
   index = 0
   while index < source_array.length
-    puts "Inside while"
     total = total + source_array[index]
     index += 1
   end
-  puts total
 end
 
 def reduce_to_all_true(source_array)
-  
+  index = 0
+  while index < source_array.length
+    if source_array[index] == false
+      return false
+    end
+    index += 1
+  end
+  return true
 end
 
 def reduce_to_any_true(source_array)
