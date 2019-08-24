@@ -36,14 +36,14 @@ end
 def reduce_to_total(source_array, starting_point)
   puts "Starting point is #{starting_point}"
   puts "Array is #{source_array}"
-  total = 0
   if starting_point == nil
     puts "Inside if"
-    index = 0
+    total = 0
   else
     puts "Inside else"
-    index = starting_point
+    total = starting_point
   end
+  index = 0
   while index < source_array.length
     puts "Inside while"
     total = total + source_array[index]
