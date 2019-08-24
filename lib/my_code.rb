@@ -34,7 +34,7 @@ def map_to_square(source_array)
 end
 
 def reduce_to_total(source_array, starting_point)
-  puts starting_point
+  puts "Starting point is #{starting_point}"
   puts source_array
   total = 0
   if starting_point == nil
